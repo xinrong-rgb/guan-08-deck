@@ -188,19 +188,24 @@
     /* === 三蓮華座 === */
     .lotus-row {
       display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 18px;
-      margin: 1.2em auto; max-width: 82%;
-      align-items: end;
+      margin: 0.6em auto 0.2em; max-width: 78%;
+      align-items: center;
     }
     .lotus-row > div {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     .lotus-img {
-      width: 100%; max-width: 260px;
-      height: auto; display: block; margin: 0 auto;
+      max-width: 210px; max-height: 320px;
+      width: auto; height: auto; display: block; margin: 0 auto;
+      object-fit: contain;
       filter: drop-shadow(0 4px 12px rgba(184,138,74,0.25));
     }
     .lotus-img.center {
-      max-width: 320px;
+      max-width: 260px; max-height: 340px;
     }
     .lotus-seat-caption {
       font-size: 0.6em; color: var(--accent);
@@ -535,7 +540,7 @@
           <div class="lotus-label">觀世音菩薩</div>
         </div>
       </div>
-      <p style="text-align: center; font-size: 0.55em; color: var(--text-mute); margin-top: 0.4em; font-style: italic; letter-spacing: 0.08em;">
+      <p style="text-align: center; font-size: 0.55em; color: var(--text-mute); margin-top: 0.1em; font-style: italic; letter-spacing: 0.08em;">
         一佛二菩薩・三尊並列
       </p>
     </section>

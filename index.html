@@ -188,31 +188,31 @@
     /* === 三蓮華座 === */
     .lotus-row {
       display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 18px;
-      margin: 1.5em auto; max-width: 80%;
+      margin: 1.2em auto; max-width: 82%;
+      align-items: end;
     }
-    .lotus-seat {
-      background: var(--card);
-      border-radius: 50%;
-      aspect-ratio: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85em;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: 0.15em;
-      border: 2px solid var(--accent);
-      box-shadow: 0 2px 12px rgba(184,138,74,0.18);
+    .lotus-row > div {
+      text-align: center;
     }
-    .lotus-seat.center {
-      background: linear-gradient(135deg, #f5e8b8, #e6b97a);
-      border-color: var(--text);
-      color: var(--text);
-      font-size: 1.0em;
+    .lotus-img {
+      width: 100%; max-width: 260px;
+      height: auto; display: block; margin: 0 auto;
+      filter: drop-shadow(0 4px 12px rgba(184,138,74,0.25));
+    }
+    .lotus-img.center {
+      max-width: 320px;
+    }
+    .lotus-seat-caption {
+      font-size: 0.6em; color: var(--accent);
+      font-weight: 700; letter-spacing: 0.15em;
+      margin-top: 6px;
+    }
+    .lotus-seat-caption.center {
+      color: var(--text); font-size: 0.7em;
     }
     .lotus-label {
       font-size: 0.5em; color: var(--text-mute);
-      text-align: center; margin-top: 8px;
+      text-align: center; margin-top: 4px;
       letter-spacing: 0.1em;
     }
 
@@ -515,21 +515,27 @@
     <section data-background-color="#f7f1e6">
       <div class="breadcrumb"><span class="crumb">第八觀 · 像想觀</span>　|　觀像次第 ②</div>
       <h2 style="font-size: 1.35em; text-align: center; margin-top: 0.4em;">觀音於左　·　勢至於右</h2>
+      <p style="text-align: center; font-size: 0.5em; color: var(--text-mute); margin-top: -0.4em; margin-bottom: 0.2em; letter-spacing: 0.08em;">
+        （依佛的視角・佛左＝觀眾右）
+      </p>
       <div class="lotus-row">
         <div>
-          <div class="lotus-seat">左華座</div>
-          <div class="lotus-label">觀世音菩薩</div>
+          <img class="lotus-img" src="images/shizhi.png" alt="大勢至菩薩">
+          <div class="lotus-seat-caption">右華座</div>
+          <div class="lotus-label">大勢至菩薩</div>
         </div>
         <div>
-          <div class="lotus-seat center">中華座</div>
+          <img class="lotus-img center" src="images/amitabha.png" alt="阿彌陀佛">
+          <div class="lotus-seat-caption center">中華座</div>
           <div class="lotus-label">阿彌陀佛</div>
         </div>
         <div>
-          <div class="lotus-seat">右華座</div>
-          <div class="lotus-label">大勢至菩薩</div>
+          <img class="lotus-img" src="images/guanyin.png" alt="觀世音菩薩">
+          <div class="lotus-seat-caption">左華座</div>
+          <div class="lotus-label">觀世音菩薩</div>
         </div>
       </div>
-      <p style="text-align: center; font-size: 0.6em; color: var(--text-mute); margin-top: 0.6em; font-style: italic; letter-spacing: 0.08em;">
+      <p style="text-align: center; font-size: 0.55em; color: var(--text-mute); margin-top: 0.4em; font-style: italic; letter-spacing: 0.08em;">
         一佛二菩薩・三尊並列
       </p>
     </section>
